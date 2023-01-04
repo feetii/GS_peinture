@@ -1,0 +1,4 @@
+
+
+rootProject.name = "GS_peinture"
+include ':app'

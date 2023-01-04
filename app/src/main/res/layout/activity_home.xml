@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginBottom="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic__557017_result_test_product_research_icon" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="250dp"
+            android:id="@+id/liste_button"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/bariol_bold"
+            android:includeFontPadding="true"
+            android:pointerIcon="zoom_in"
+            android:text="liste des produites"
+
+            android:textColor="@color/white"
+            android:textSize="17dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="250dp"
+            android:id="@+id/ajout_button"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/bariol_bold"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:text="ajoute nouveau produit"
+            android:textColor="@color/white"
+            android:textSize="17dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

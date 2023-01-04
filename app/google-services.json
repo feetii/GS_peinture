@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "840590988076",
+    "project_id": "gspeinture-e8a43",
+    "storage_bucket": "gspeinture-e8a43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840590988076:android:7e0fb9978c753c81e49289",
+        "android_client_info": {
+          "package_name": "com.soufet.gs_peinture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840590988076-bao14f9alao0mbthjcqt0n5khoj91bgt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCt08LcSx5-Giki6TtlScNPwbOU3Eo4FA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840590988076-bao14f9alao0mbthjcqt0n5khoj91bgt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

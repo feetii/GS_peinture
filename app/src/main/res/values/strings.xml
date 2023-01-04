@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GS_peinture</string>
+    <string name="db_ref">https://gspeinture-e8a43-default-rtdb.firebaseio.com/</string>
+</resources>
