@@ -10,8 +10,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.soufet.gs_peinture.R;
 
 public class ProducViewHolder extends RecyclerView.ViewHolder {
-    public TextView product_title , product_category,product_quantity,product_desc,product_code;
-    public ImageView product_image,delete_product,edit_product;
+    public TextView product_title ,code_catigory,
+    product_category,
+    product_quantity,
+    product_desc,
+    product_code;
+
+    public ImageView product_image,
+    delete_product,
+    edit_product;
+    String id;
+
     public ProducViewHolder(@NonNull View itemView) {
         super(itemView);
         product_title = itemView.findViewById(R.id.product_title);
@@ -20,7 +29,6 @@ public class ProducViewHolder extends RecyclerView.ViewHolder {
         product_desc = itemView.findViewById(R.id.product_description);
         product_image = itemView.findViewById(R.id.product_img);
         delete_product = itemView.findViewById(R.id.delete_product);
-        edit_product = itemView.findViewById(R.id.edit_product);
         product_code = itemView.findViewById(R.id.code_product);
     }
 }

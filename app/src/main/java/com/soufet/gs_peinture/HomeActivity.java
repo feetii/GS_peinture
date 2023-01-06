@@ -11,11 +11,13 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
-Button liste ,ajout;
+    Button liste ,
+    ajout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getSupportActionBar().hide();//Ocultar ActivityBar anterior
         initialisationOfFields();
         liste.setOnClickListener(new View.OnClickListener() {
             @Override

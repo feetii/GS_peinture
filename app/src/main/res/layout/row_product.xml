@@ -58,9 +58,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bariol_bold"
                         android:text="Product category"
-                        android:textColor="#B2B2B2"
-                        android:textSize="13sp">
+                        android:textColor="@color/green"
+                        android:textSize="15sp">
 
                     </TextView>
                     <TextView
@@ -70,26 +71,19 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="code Product"
-                        android:textColor="#B2B2B2"
+                        android:textColor="#FF0000"
                         android:textSize="13sp">
 
                     </TextView>
                 </LinearLayout>
-                <ImageView
-                    android:id="@+id/edit_product"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="top"
-                    android:src="@drawable/ic__52547_edit_mode_icon">
-
-                </ImageView>
 
                 <ImageView
                     android:id="@+id/delete_product"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="top"
-                    android:src="@drawable/ic_delete_icon">
+                    android:src="@drawable/ic_delete_icon"
+                    android:contentDescription="TODO">
 
                 </ImageView>
 
@@ -97,13 +91,13 @@
 
             <TextView
                 android:id="@+id/product_description"
-                android:layout_width="wrap_content"
+                android:layout_width="172dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:maxLines="3"
                 android:text="Macbook pro 2019 Retina display 3K resolution"
                 android:textColor="@color/black"
-                android:textSize="13sp">
+                android:textSize="15sp">
 
             </TextView>
         </LinearLayout>

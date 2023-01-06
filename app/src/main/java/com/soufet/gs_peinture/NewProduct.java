@@ -33,18 +33,25 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class NewProduct extends AppCompatActivity {
- ImageView selectIMg;
+    ImageView selectIMg;
     Uri imageFile;
     String imageURL;
     DatabaseReference productRef;
     Button add_product;
-    EditText nom,description,quantity,seuil,code_de_categorie,code_de_produit,categorie;
+    EditText nom,
+    description,
+    quantity,
+    seuil,
+    code_de_categorie,
+    code_de_produit,
+    categorie;
     StorageReference productImagesRef;
     ProgressDialog loading;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
+        getSupportActionBar().hide();//Ocultar ActivityBar anterior
         initialisationOfFields();
         ActivityResultLauncher<Intent> openGalleryResult = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -110,6 +117,9 @@ public class NewProduct extends AppCompatActivity {
                         if(task.isSuccessful()){
                             loading.dismiss();
                             Toast.makeText(NewProduct.this, "Product added", Toast.LENGTH_SHORT).show();
+                            Intent i = new Intent(NewProduct.this, Listeofproducts.class);
+                            startActivity(i);
+                            finish();
                         }else{
                             loading.dismiss();
                             Toast.makeText(NewProduct.this, "Erreur", Toast.LENGTH_SHORT).show();
@@ -119,6 +129,7 @@ public class NewProduct extends AppCompatActivity {
                 });
 
     }
+
     public Intent opengallery()
     {
         Intent i=new Intent();

@@ -14,24 +14,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GS_peinture">
         <activity
-            android:name=".NewProduct"
+            android:name=".ProductDetails"
             android:exported="false" />
         <activity
+
+            android:name=".NewProduct"
+            android:exported="false"
+            />
+        <activity
             android:name=".Listeofproducts"
-            android:exported="false" />
+            android:exported="false"
+            android:label=""
+            />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
-        <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

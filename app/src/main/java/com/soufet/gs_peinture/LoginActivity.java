@@ -18,13 +18,15 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class LoginActivity extends AppCompatActivity {
-EditText Email,Password;
-CardView Login;
-FirebaseAuth mauth;
+    EditText Email,
+    Password;
+    CardView Login;
+    FirebaseAuth mauth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
+        getSupportActionBar().hide();//Ocultar ActivityBar anterior
         initialisationOfFields();
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,14 +39,15 @@ FirebaseAuth mauth;
         });
 
     }
-    private boolean checkFields(){
-        if(Email.getText().toString().isEmpty()){
-            Email.setError("please fill the email");
+
+    private boolean checkFields( ) {
+        if ( Email.getText( ).toString( ).isEmpty( ) ) {
+            Email.setError( "please fill the email" );
             return false;
-        }else if (Password.getText().toString().isEmpty()){
-            Password.setError("Please fill the password");
+        } else if ( Password.getText( ).toString( ).isEmpty( ) ) {
+            Password.setError( "Please fill the password" );
             return false;
-        }else {
+        } else {
             return true;
         }
     }
