@@ -55,5 +55,20 @@
             android:textSize="17dp">
 
         </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ajout_four"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/bariol_bold"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:text="ajoute nouveau fournisseur"
+            android:textColor="@color/white"
+            android:textSize="17dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

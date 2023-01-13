@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
     Button liste ,
-    ajout;
+    ajout,ajou2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +33,19 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        ajou2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(HomeActivity.this,AddSuplierActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     private void initialisationOfFields(){
         liste=findViewById(R.id.liste_button);
         ajout=findViewById(R.id.ajout_button);
-
+        ajou2=findViewById( R.id.ajout_four );
     }
 }

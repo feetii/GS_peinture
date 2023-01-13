@@ -1,14 +1,11 @@
 package com.soufet.gs_peinture;
 
-import static java.security.AccessController.getContext;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -34,14 +31,14 @@ public class Listeofproducts extends AppCompatActivity {
     FloatingActionButton add;
     DatabaseReference productRef;
     ProductAdapter adapter;
-
+    CardView cardView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listeofproducts);
         getSupportActionBar();
         product_list=findViewById(R.id.product_list);
-
+         cardView = findViewById(R.id.card_view);
         add=findViewById(R.id.addBtn);
 
         productRef= FirebaseDatabase.getInstance(getString(R.string.db_ref)).getReference().child("Products");
@@ -53,8 +50,13 @@ public class Listeofproducts extends AppCompatActivity {
             }
         });
         LinearLayoutManager manager = new LinearLayoutManager(Listeofproducts.this);
+
         product_list.setLayoutManager(manager);
+
+
+
         fetchDataFromDB();
+
 
     }
 

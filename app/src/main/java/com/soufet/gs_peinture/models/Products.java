@@ -8,8 +8,17 @@ import java.util.Map;
  * The type Products.
  */
 public class Products implements Serializable {
-    private String nom,description,code_de_categorie,image,code_de_produit,categorie,id;
+    private String nom,description,code_de_categorie,image,code_de_produit,categorie,id,imageId;
     private int quantity,seuil;
+
+    public String getImageId( ){
+        return imageId;
+    }
+
+    public void setImageId(String imageId){
+        this.imageId = imageId;
+    }
+
     /**
      * The Stars.
      */
@@ -79,7 +88,7 @@ public class Products implements Serializable {
      * @param quantity          the quantity
      * @param seuil             the seuil
      */
-    public Products(String nom, String description, String code_de_categorie, String image, String code_de_produit, String categorie, String id, int quantity, int seuil) {
+    public Products(String nom, String description, String code_de_categorie, String image, String code_de_produit, String categorie, String id, int quantity, int seuil,String imageId) {
         this.nom = nom;
         this.description = description;
         this.code_de_categorie = code_de_categorie;
@@ -89,6 +98,7 @@ public class Products implements Serializable {
         this.id = id;
         this.quantity = quantity;
         this.seuil = seuil;
+        this.imageId = imageId;
     }
 
     /**

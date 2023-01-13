@@ -139,8 +139,8 @@ public class NewProduct extends AppCompatActivity {
     }
     private void uploadImageToGoogleCloud(){
         loading.show();
-        String id = generateID();
-        productImagesRef.child(id+".jpeg")
+        String imageId = generateID();
+        productImagesRef.child(imageId+".jpeg")
                 .putFile(imageFile)
                 .addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                     @Override
@@ -148,7 +148,7 @@ public class NewProduct extends AppCompatActivity {
                         if(task.isSuccessful()){
 
                             //get download url of the uploaded image
-                            productImagesRef.child(id+".jpeg")
+                            productImagesRef.child(imageId+".jpeg")
                                     .getDownloadUrl()
                                     .addOnSuccessListener(new OnSuccessListener<Uri>() {
                                         @Override
@@ -159,7 +159,7 @@ public class NewProduct extends AppCompatActivity {
                                             String id = productRef.getKey(); // Get the generated key from firebase
                                             Products product = new Products(nom.getText().toString(),description.getText().toString(),code_de_categorie.getText().toString(),imageURL,
                                                     code_de_produit.getText().toString(),categorie.getText().toString(),id,Integer.valueOf(quantity.getText().toString())
-                                                    ,Integer.valueOf(seuil.getText().toString())
+                                                    ,Integer.valueOf(seuil.getText().toString()),imageId
 
                                             );
                                             savprodinDB(product);

@@ -14,18 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GS_peinture">
         <activity
+            android:name=".AddSuplierActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProductDetails"
             android:exported="false" />
         <activity
-
             android:name=".NewProduct"
-            android:exported="false"
-            />
+            android:exported="false" />
         <activity
             android:name=".Listeofproducts"
             android:exported="false"
-            android:label=""
-            />
+            android:label="" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />

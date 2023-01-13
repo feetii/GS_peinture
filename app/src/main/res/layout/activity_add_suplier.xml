@@ -21,13 +21,7 @@
         tools:context=".AddProduct">
 
 
-        <ImageView
-            android:id="@+id/selecImg"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/ic__img">
 
-        </ImageView>
 
 
         <androidx.cardview.widget.CardView
@@ -53,8 +47,8 @@
                 android:clickable="true"
                 android:ellipsize="end"
                 android:fontFamily="@font/roboto_medium"
-                android:hint="nom du produit"
-                android:inputType="textEmailAddress"
+                android:hint="name"
+                android:inputType="text"
                 android:maxLines="1"
                 android:textColor="#818181"
                 android:textSize="15sp" />
@@ -85,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/code_de_produit"
+            android:id="@+id/address"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -93,8 +87,8 @@
             android:clickable="true"
             android:ellipsize="end"
             android:fontFamily="@font/roboto_medium"
-            android:hint="code de produit"
-            android:inputType="number"
+            android:hint="address"
+            android:inputType="text"
             android:maxLines="1"
             android:textColor="#818181"
             android:textSize="15sp" /> <ImageView
@@ -123,7 +117,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/description"
+                android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -131,19 +125,19 @@
                 android:clickable="true"
                 android:ellipsize="end"
                 android:fontFamily="@font/roboto_medium"
-                android:hint="description"
-                android:inputType="text"
+                android:hint="phone Nmber"
+                android:inputType="number"
                 android:maxLines="1"
                 android:textColor="#818181"
                 android:textSize="15sp" />
             <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_description_icon"
-            android:layout_marginStart="10dp">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_description_icon"
+                android:layout_marginStart="10dp">
 
-        </ImageView>
+            </ImageView>
 
 
         </androidx.cardview.widget.CardView>
@@ -163,7 +157,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <EditText
-                android:id="@+id/quantité"
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -171,8 +165,8 @@
                 android:clickable="true"
                 android:ellipsize="end"
                 android:fontFamily="@font/roboto_medium"
-                android:hint="quantité"
-                android:inputType="number"
+                android:hint="email"
+                android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:textColor="#818181"
                 android:textSize="15sp" />
@@ -188,126 +182,12 @@
         </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:elevation="500dp"
-            android:isScrollContainer="true"
-            app:cardCornerRadius="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <EditText
-                android:id="@+id/Catégorie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:clickable="true"
-                android:ellipsize="end"
-                android:fontFamily="@font/roboto_medium"
-                android:hint="Catégorie"
-                android:inputType="text"
-                android:maxLines="1"
-                android:textColor="#818181"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/ic_category_add_icon">
-
-            </ImageView>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:elevation="500dp"
-            android:isScrollContainer="true"
-            app:cardCornerRadius="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <EditText
-                android:id="@+id/code_de_categorie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:clickable="true"
-                android:ellipsize="end"
-                android:fontFamily="@font/roboto_medium"
-                android:hint="code de categorie"
-                android:inputType="number"
-                android:maxLines="1"
-                android:textColor="#818181"
-                android:textSize="15sp" /> <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_code_icon"
-            android:layout_marginStart="10dp">
-
-        </ImageView>
-
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:clickable="true"
-            android:elevation="500dp"
-            android:isScrollContainer="true"
-            app:cardCornerRadius="30dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <EditText
-                android:id="@+id/seuil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:clickable="true"
-                android:ellipsize="end"
-                android:fontFamily="@font/roboto_medium"
-                android:hint="seuil"
-                android:inputType="number"
-                android:maxLines="1"
-                android:textColor="#818181"
-                android:textSize="15sp" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_alert_icon"
-                android:layout_marginStart="10dp">
-
-            </ImageView>
-
-        </androidx.cardview.widget.CardView>
-
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/add_to_list"
+            android:id="@+id/add_four"
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:background="@drawable/button"
-            android:text="ajouter un produit"></androidx.appcompat.widget.AppCompatButton>
+            android:text="ajouter un fournisseur"></androidx.appcompat.widget.AppCompatButton>
 
 
     </LinearLayout>

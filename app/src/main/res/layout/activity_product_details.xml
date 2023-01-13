@@ -39,6 +39,22 @@
 
         </TextView>
     </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginBottom="15dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="300dp"
@@ -211,18 +227,33 @@
             android:textSize="17sp"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/soustration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic__772613_calculate_eliminate_hide_minus_soustract_icon" />
+
         <TextView
             android:id="@+id/product_quantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
             android:text="45000 "
             android:textAlignment="center"
             android:textColor="@color/blue"
-            android:textSize="24sp">
+            android:textSize="20sp">
 
         </TextView>
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic__34224_add_plus_new_icon__2_" />
     </LinearLayout>
 
     <LinearLayout
@@ -296,4 +327,6 @@
     </LinearLayout>
 
 
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>
